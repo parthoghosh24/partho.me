@@ -7,7 +7,7 @@ html {
 }
 
 .hero{
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 .me{
@@ -30,4 +30,24 @@ html {
 
 .margin-top-generic{
     margin-top: 5em;
+    padding-top: 5em;
+}
+
+.project-img-holder{
+    margin:0 auto;
+}
+
+.project-img-holder img{
+    height: 100px;
+    width: 100px;
+}
+
+.horiz-img
+{
+    height: 100px;
+    width: 200px !important; 
+}
+
+.project-item-card{
+    padding:0.5em;
 }

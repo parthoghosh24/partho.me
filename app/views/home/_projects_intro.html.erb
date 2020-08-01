@@ -1,0 +1,35 @@
+<div id="projects-intro" class="projects-intro margin-top-generic">
+    <div class="row flex-center">
+        <div class="text-center">
+            <h1>Projects</h1>
+        </div>
+        <%@projects.each_slice(3).with_index do |project_row, index|%>
+            <div class="row">
+                <%project_row.each do |project|%>
+                    <div class="col md-4 project-item-card">
+                        <%= render partial: 'projects/project', locals: {project: project} %>
+                    </div>
+                <%end%>
+                <%if index == 1%>
+                    <div class="col md-4 project-item-card">
+                        <%= link_to  "Show all", projects_path, class: "paper-btn" %>
+                    </div>
+                <%end%>
+            </div>
+        <%end%>
+    </div>
+    <%@projects.each do |project|%>
+        <input class="modal-state" id="modal-<%=project.id%>" type="checkbox">
+        <div class="modal">
+                <label class="modal-bg" for="modal-<%=project.id%>"></label>
+                <div class="modal-body">
+                    <label class="btn-close" for="modal-<%=project.id%>">X</label>
+                    <h4 class="modal-title">Modal Title</h4>
+                    <h5 class="modal-subtitle">Modal Subtitle</h5>
+                    <p class="modal-text">This is another example of modal which is implemented with pure CSS! :D</p>
+                    <a href="/#download">Get PaperCSS</a>
+                    <label for="modal-2" class="modal-link">Close</label>
+                </div>
+        </div>
+    <%end%>
+</div>

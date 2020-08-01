@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="project-img-holder">
+        <%=image_resolver project%>
+    </div>
+
+    <div class="card-body">
+        <h4 class="card-title"><%=project.title%></h4>
+        <h5 class="card-subtitle"><%=project.subtitle%></h5>
+        <p class="card-text"><%=truncate(project.description, length: 115)%></p>
+        <div class="row flex-spaces child-borders">
+            <label class="paper-btn margin" for="modal-<%=project.id%>">Expand</label>
+        </div>
+    </div>
+</div>
