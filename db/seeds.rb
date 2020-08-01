@@ -6,9 +6,9 @@ description: "My portfolio website where I share work done by me and share my le
 role: "Full-stack developer",
 tech_stack: "Ruby 2.7, Rails 6.0.3, Mysql, PaperCSS, HTML5",
 url: "/",
-image_urls: "/own/snap1.png,/own/snap2.png",
+image_urls: "own/snap1.png,own/snap2.png",
 video_urls: "",
-logo_url: "/own/logo.png",
+logo_url: "own/logo.png",
 rank: 1).first_or_create
 
 Project.where(title: "Forex Rates gem",
