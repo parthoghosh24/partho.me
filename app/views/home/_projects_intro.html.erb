@@ -18,18 +18,5 @@
             </div>
         <%end%>
     </div>
-    <%@projects.each do |project|%>
-        <input class="modal-state" id="modal-<%=project.id%>" type="checkbox">
-        <div class="modal">
-                <label class="modal-bg" for="modal-<%=project.id%>"></label>
-                <div class="modal-body">
-                    <label class="btn-close" for="modal-<%=project.id%>">X</label>
-                    <h4 class="modal-title">Modal Title</h4>
-                    <h5 class="modal-subtitle">Modal Subtitle</h5>
-                    <p class="modal-text">This is another example of modal which is implemented with pure CSS! :D</p>
-                    <a href="/#download">Get PaperCSS</a>
-                    <label for="modal-2" class="modal-link">Close</label>
-                </div>
-        </div>
-    <%end%>
+    <%= render partial: 'projects/project_detail', locals: {projects: @projects} %>
 </div>

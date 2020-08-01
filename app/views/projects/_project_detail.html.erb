@@ -1,0 +1,29 @@
+<%projects.each do |project|%>
+        <input class="modal-state" id="modal-<%=project.id%>" type="checkbox">
+        <div class="modal">
+                <label class="modal-bg" for="modal-<%=project.id%>"></label>
+                <div class="modal-body">
+                    <label class="btn-close" for="modal-<%=project.id%>">X</label>
+                    <h4 class="modal-title"><%=project.title%></h4>
+                    <h5 class="modal-subtitle"><%=project.subtitle%> - <%=project.role%></h5>
+                    <p class="modal-text"><%=project.description%></p>
+                    <div class="row">
+                        <%project.image_urls.split(",").each do |image_url|%>
+                            <%=image_tag image_url, width: 200%>
+                        <%end%>
+                    </div>
+                    <div class="row">
+                        <%project.video_urls.split(",").each do |video_url|%>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jt3ePDl_d-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <%end%>
+                    </div>
+                    <p>
+                      <%project.tech_stack.split(",").each do |tech|%>
+                            <span class="badge secondary"><%=tech%></span>
+                        <%end%>      
+                    </p>
+                    <%=link_to "Click to Access", project.url, target: "_blank"%>
+                    <label for="modal-<%=project.id%>" class="modal-link">Close</label>
+                </div>
+        </div>
+    <%end%>
