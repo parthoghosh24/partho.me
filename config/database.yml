@@ -23,5 +23,7 @@ test:
   database: partho_me_test
 
 production:
-  <<: *default
-  database: partho_me_prod
+  adapter: mysql2
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  url: <%= ENV['CLEARDB_DATABASE_URL'] %>
