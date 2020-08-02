@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Partho.Me</title>
+    <%= display_meta_tags site: 'Partho.me' %>
+    <%= display_meta_tags description: 'Hey I am Partho Ghosh and Partho.me is my portfolio website. I am a full stack software engineer. Find out more about me and my work by exploring the site.' %>
+    <%= display_meta_tags keywords: 'Partho Ghosh, Developer, Rails Developer, Spring Boot Developer, Software Engineer, Rails, Java, Ruby' %>
+    <%= display_meta_tags image_src: 'https://avatars0.githubusercontent.com/u/2009988?s=460&u=86ac34e0ec298d4dcc66707359d883f3c90646fb&v=4' %>
+    <%= display_meta_tags og: {title: "Partho Ghosh portfolio website", 
+                               site_name: "Partho.me", 
+                               description: "Hey I am Partho Ghosh and Partho.me is my portfolio website. I am a full stack software engineer. Find out more about me and my work by exploring the site.",
+                               image:"https://avatars0.githubusercontent.com/u/2009988?s=460&u=86ac34e0ec298d4dcc66707359d883f3c90646fb&v=4"}%>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
