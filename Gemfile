@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'meta-tags'
 # Generate Sitemap
 gem 'sitemap_generator'
+# Faraday
+gem 'faraday'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
