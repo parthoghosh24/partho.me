@@ -1,0 +1,16 @@
+<div class="container hero">
+    <div class="row flex-center">
+        <div class="text-center">
+            <h1><%= title 'Blogs' %></h1>
+        </div>
+        <%@blogs.each_slice(3) do |blog_row|%>
+            <div class="row">
+                <%blog_row.each do |blog|%>
+                    <div class="col md-4 project-item-card">
+                        <%= render partial: 'blogs/blog', locals: {blog: blog} %>
+                    </div>
+                <%end%>
+            </div>
+        <%end%>  
+    </div>
+</div>

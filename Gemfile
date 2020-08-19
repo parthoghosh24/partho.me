@@ -29,6 +29,8 @@ gem 'meta-tags'
 gem 'sitemap_generator'
 # Faraday
 gem 'faraday'
+# Faraday cache
+gem 'faraday-http-cache'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
