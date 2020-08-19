@@ -6,7 +6,7 @@
         <h4 class="card-title"><%=blog["title"]%></h4>
         <h5 class="card-subtitle"><%=time_ago_in_words blog["pubDate"].to_datetime%> ago</h5>
         <div class="row flex-spaces child-borders">
-            <%= link_to  "Check out", blog["link"], class:"button", target:"_blank" %>
+            <%= link_to  "Check out", blog["link"], class: "paper-btn", target: "_blank" %>
         </div>
     </div>
 </div>
