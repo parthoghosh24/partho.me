@@ -1,6 +1,6 @@
 
 
-Project.where(title: "Partho.me",
+partho_me = Project.where(title: "Partho.me",
 subtitle: "My Portfolio Website", 
 description: "My portfolio website where I share work done by me and share my learnings, thoughts and ideas in the form of blogs.", 
 role: "Full-stack developer",
@@ -11,7 +11,9 @@ video_urls: "",
 logo_url: "own/logo.png",
 rank: 1).first_or_create
 
-Project.where(title: "Forex Rates gem",
+partho_me.update!(rank: 2)
+
+forex_gem = Project.where(title: "Forex Rates gem",
 subtitle: "Simple gem to fetch forex rates with built-in caching", 
 description: "Built upon https://exchangeratesapi.io/ , this gem allows to fetch latest and historical foreign exchange rates. The gem comes with an optional in-built caching support so that responses can be cached (and we don't end up spamming the source).", 
 role: "Gem developer",
@@ -22,7 +24,9 @@ video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 2).first_or_create
 
-Project.where(title: "Gamealoon",
+forex_gem.update!(rank: 3)
+
+gamealoon = Project.where(title: "Gamealoon",
 subtitle: "IMDB for video games", 
 description: "Gamealoon is a platform which lets gamers from all around the world to voice their opinions via reviews, news, videos and blogs. In return for creation and sharing of favorite gaming content, gamers earn xp, level and ranks. Also, gamealoon features a twitter like social network which allows users to follow other users and games and receive feeds. Can register in under 2 minutes and start creating content by hitting create button. This app is no more hosted. Code is open sourced on github.", 
 role: "Founder & CTO",
@@ -33,7 +37,9 @@ video_urls: "https://youtu.be/jt3ePDl_d-0",
 logo_url: "https://raw.githubusercontent.com/parthoghosh24/gamealoonui/master/static/images/logo.png",
 rank: 3).first_or_create
 
-Project.where(title: "Candeo App",
+gamealoon.update!(rank: 4)
+
+candeo = Project.where(title: "Candeo App",
 subtitle: "Talent Discovery Platform", 
 description: "Candeo is a social network focused around talent discovery and nurturing. It behaves like a persistent online talent show where you can perform every week, voted and get ranked at the end of the week. Plus you can promote and discover new talent also and grow your network. This app is no more hosted. Code is open sourced on github.", 
 role: "Founder & CTO",
@@ -44,7 +50,9 @@ video_urls: "",
 logo_url: "https://raw.githubusercontent.com/parthoghosh24/candeo-android/master/app/src/main/res/drawable-xxhdpi/logo.png",
 rank: 4).first_or_create
 
-Project.where(title: "Chuck Norris jokes gem",
+candeo.update!(rank: 5)
+
+chuck_norris = Project.where(title: "Chuck Norris jokes gem",
 subtitle: "Another Chuck Norris jokes gem", 
 description: "Another Chuck Norris gem which allows you to fetch and integrate chuck norris jokes from api.chucknorris.io. It has a 'name' mode via which you can replace 'Chuck Norris' with 'name' (not recommended unless you are an equivalent legend say like Rajnikanth).", 
 role: "Gem developer",
@@ -54,6 +62,8 @@ image_urls: "",
 video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 5).first_or_create
+
+chuck_norris.update!(rank: 6)
 
 enphase_weather_alert = Project.where(title: "Enphase weather alert service",
 subtitle: "Severe weather alert", 
@@ -66,7 +76,7 @@ video_urls: "",
 logo_url: "https://enphase.com/sites/all/themes/enphase/assets/images/svgs/dist/enphase-e-logo-footer-orange.svg",
 rank: 6).first_or_create
 
-enphase_weather_alert.update!(logo_url: "https://www4.enphase.com/sites/all/themes/enphase/assets/images/svgs/src/enphase-logo.svg")
+enphase_weather_alert.update!(rank: 7, logo_url: "https://www4.enphase.com/sites/all/themes/enphase/assets/images/svgs/src/enphase-logo.svg")
 
 enph = Project.where(title: "Enphase SAML SSO",
 subtitle: "SAML service for Enphase", 
@@ -79,9 +89,9 @@ video_urls: "",
 logo_url: "https://enphase.com/sites/all/themes/enphase/assets/images/svgs/dist/enphase-e-logo-footer-orange.svg",
 rank: 7).first_or_create
 
-enph.update!(logo_url: "https://www4.enphase.com/sites/all/themes/enphase/assets/images/svgs/src/enphase-logo.svg")
+enph.update!(rank: 8, logo_url: "https://www4.enphase.com/sites/all/themes/enphase/assets/images/svgs/src/enphase-logo.svg")
 
-Project.where(title: "Shorten It",
+shorten = Project.where(title: "Shorten It",
 subtitle: "Simple URL shortner", 
 description: "A url shortener web app with url stats and api support.", 
 role: "Fullstack Developer",
@@ -92,7 +102,9 @@ video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 8).first_or_create
 
-Project.where(title: "Tanx",
+shorten.update!(rank: 9)
+
+tanx = Project.where(title: "Tanx",
 subtitle: "Fast paced tank shooter game", 
 description: "Tanx is a fast paced tanks shooter made in Ruby using Gosu library. It is actually being made by referencing the beautifully written book, 'Developing Games With Ruby' by Tomas Varaneckas.", 
 role: "Developer",
@@ -102,6 +114,8 @@ image_urls: "",
 video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 9).first_or_create
+
+tanx.update!(rank: 10)
 
 re_pong = Project.where(title: "Re-Pong",
 subtitle: "Classic Pong game with music, local multiplayer and online multiplayer.", 
@@ -114,4 +128,4 @@ video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 10).first_or_create
 
-re_pong.update!(logo_url: "https://raw.githubusercontent.com/photonstorm/phaser/v2.6.2/resources/Phaser%20Logo/PNG/Phaser%20Logo%20Web%20Quality.png")
+re_pong.update!(rank: 1, logo_url: "https://raw.githubusercontent.com/photonstorm/phaser/v2.6.2/resources/Phaser%20Logo/PNG/Phaser%20Logo%20Web%20Quality.png")
