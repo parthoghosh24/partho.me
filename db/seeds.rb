@@ -55,7 +55,7 @@ video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 5).first_or_create
 
-Project.where(title: "Enphase weather alert service",
+enphase_weather_alert = Project.where(title: "Enphase weather alert service",
 subtitle: "Severe weather alert", 
 description: "A scheduler based microservice which alerts the user of a severe upcoming weather condition and modifies the storage settings for full backup during outage.", 
 role: "Backend Microservice Developer",
@@ -65,6 +65,8 @@ image_urls: "",
 video_urls: "",
 logo_url: "https://enphase.com/sites/all/themes/enphase/assets/images/svgs/dist/enphase-e-logo-footer-orange.svg",
 rank: 6).first_or_create
+
+enphase_weather_alert.update!(logo_url: "https://www4.enphase.com/sites/all/themes/enphase/assets/images/svgs/src/enphase-logo.svg")
 
 enph = Project.where(title: "Enphase SAML SSO",
 subtitle: "SAML service for Enphase", 
@@ -101,7 +103,7 @@ video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 9).first_or_create
 
-Project.where(title: "Re-Pong",
+re_pong = Project.where(title: "Re-Pong",
 subtitle: "Classic Pong game with music, local multiplayer and online multiplayer.", 
 description: "Re-Pong is implementation of classic pong with music, offline and online multiplayer. Online multiplayer is in beta with noticible bugs. Code can be found at https://github.com/parthoghosh24/pong", 
 role: "Developer",
@@ -111,3 +113,5 @@ image_urls: "own/pong1.png,own/pong2.png",
 video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 10).first_or_create
+
+re_pong.update!(logo_url: "https://raw.githubusercontent.com/photonstorm/phaser/v2.6.2/resources/Phaser%20Logo/PNG/Phaser%20Logo%20Web%20Quality.png")
