@@ -66,7 +66,7 @@ video_urls: "",
 logo_url: "https://enphase.com/sites/all/themes/enphase/assets/images/svgs/dist/enphase-e-logo-footer-orange.svg",
 rank: 6).first_or_create
 
-Project.where(title: "Enphase SAML SSO",
+enph = Project.where(title: "Enphase SAML SSO",
 subtitle: "SAML service for Enphase", 
 description: "SAML based SSO solution for Enphase built on top on Shibboleth OpenSAML.", 
 role: "Backend Microservice Developer",
@@ -76,6 +76,8 @@ image_urls: "",
 video_urls: "",
 logo_url: "https://enphase.com/sites/all/themes/enphase/assets/images/svgs/dist/enphase-e-logo-footer-orange.svg",
 rank: 7).first_or_create
+
+enph.update!(logo_url: "https://www4.enphase.com/sites/all/themes/enphase/assets/images/svgs/src/enphase-logo.svg")
 
 Project.where(title: "Shorten It",
 subtitle: "Simple URL shortner", 
@@ -98,3 +100,14 @@ image_urls: "",
 video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 9).first_or_create
+
+Project.where(title: "Re-Pong",
+subtitle: "Classic Pong game with music, local multiplayer and online multiplayer.", 
+description: "Re-Pong is implementation of classic pong with music, offline and online multiplayer. Online multiplayer is in beta with noticible bugs. Code can be found at https://github.com/parthoghosh24/pong", 
+role: "Developer",
+tech_stack: "PhaserJS 3, Colyseus",
+url: "http://repong-8080.herokuapp.com/",
+image_urls: "own/pong1.png,own/pong2.png",
+video_urls: "",
+logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
+rank: 10).first_or_create
