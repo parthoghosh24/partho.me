@@ -11,7 +11,7 @@ video_urls: "",
 logo_url: "own/logo.png",
 rank: 1).first_or_create
 
-partho_me.update!(rank: 2)
+partho_me.update!(rank: 3)
 
 forex_gem = Project.where(title: "Forex Rates gem",
 subtitle: "Simple gem to fetch forex rates with built-in caching", 
@@ -24,7 +24,7 @@ video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 2).first_or_create
 
-forex_gem.update!(rank: 3)
+forex_gem.update!(rank: 4)
 
 gamealoon = Project.where(title: "Gamealoon",
 subtitle: "IMDB for video games", 
@@ -37,7 +37,7 @@ video_urls: "https://youtu.be/jt3ePDl_d-0",
 logo_url: "https://raw.githubusercontent.com/parthoghosh24/gamealoonui/master/static/images/logo.png",
 rank: 3).first_or_create
 
-gamealoon.update!(rank: 4)
+gamealoon.update!(rank: 5)
 
 candeo = Project.where(title: "Candeo App",
 subtitle: "Talent Discovery Platform", 
@@ -50,7 +50,7 @@ video_urls: "",
 logo_url: "https://raw.githubusercontent.com/parthoghosh24/candeo-android/master/app/src/main/res/drawable-xxhdpi/logo.png",
 rank: 4).first_or_create
 
-candeo.update!(rank: 5)
+candeo.update!(rank: 6)
 
 chuck_norris = Project.where(title: "Chuck Norris jokes gem",
 subtitle: "Another Chuck Norris jokes gem", 
@@ -63,7 +63,7 @@ video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 5).first_or_create
 
-chuck_norris.update!(rank: 6)
+chuck_norris.update!(rank: 7)
 
 enphase_weather_alert = Project.where(title: "Enphase weather alert service",
 subtitle: "Severe weather alert", 
@@ -76,7 +76,7 @@ video_urls: "",
 logo_url: "https://enphase.com/sites/all/themes/enphase/assets/images/svgs/dist/enphase-e-logo-footer-orange.svg",
 rank: 6).first_or_create
 
-enphase_weather_alert.update!(rank: 7, logo_url: "https://www4.enphase.com/sites/all/themes/enphase/assets/images/svgs/src/enphase-logo.svg")
+enphase_weather_alert.update!(rank: 8, logo_url: "https://www4.enphase.com/sites/all/themes/enphase/assets/images/svgs/src/enphase-logo.svg")
 
 enph = Project.where(title: "Enphase SAML SSO",
 subtitle: "SAML service for Enphase", 
@@ -89,7 +89,7 @@ video_urls: "",
 logo_url: "https://enphase.com/sites/all/themes/enphase/assets/images/svgs/dist/enphase-e-logo-footer-orange.svg",
 rank: 7).first_or_create
 
-enph.update!(rank: 8, logo_url: "https://www4.enphase.com/sites/all/themes/enphase/assets/images/svgs/src/enphase-logo.svg")
+enph.update!(rank: 9, logo_url: "https://www4.enphase.com/sites/all/themes/enphase/assets/images/svgs/src/enphase-logo.svg")
 
 shorten = Project.where(title: "Shorten It",
 subtitle: "Simple URL shortner", 
@@ -102,7 +102,7 @@ video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 8).first_or_create
 
-shorten.update!(rank: 9)
+shorten.update!(rank: 10)
 
 tanx = Project.where(title: "Tanx",
 subtitle: "Fast paced tank shooter game", 
@@ -115,7 +115,7 @@ video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 9).first_or_create
 
-tanx.update!(rank: 10)
+tanx.update!(rank: 11)
 
 re_pong = Project.where(title: "Re-Pong",
 subtitle: "Classic Pong game with music, local multiplayer and online multiplayer.", 
@@ -128,4 +128,15 @@ video_urls: "",
 logo_url: "https://www.ruby-lang.org/images/header-ruby-logo.png",
 rank: 10).first_or_create
 
-re_pong.update!(rank: 1, logo_url: "https://raw.githubusercontent.com/photonstorm/phaser/v2.6.2/resources/Phaser%20Logo/PNG/Phaser%20Logo%20Web%20Quality.png")
+re_pong.update!(rank: 2, logo_url: "https://raw.githubusercontent.com/photonstorm/phaser/v2.6.2/resources/Phaser%20Logo/PNG/Phaser%20Logo%20Web%20Quality.png")
+
+re_pong = Project.where(title: "Perspctve",
+subtitle: "Opinion based social network", 
+description: "Perspctve is an opinion based social network which enables users to share their opinions without getting trolled.", 
+role: "Creator & Developer",
+tech_stack: "ReactJS, TailwindCSS, Ruby on Rails API",
+url: "https://perspctve.com/",
+image_urls: "own/perspctve1.png,own/perspctve2.png",
+video_urls: "",
+logo_url: "https://perspctve.com/favicon.svg",
+rank: 1).first_or_create
